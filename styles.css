@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/** Variables **/
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --lightpink: hsl(321, 100%, 78%);
+    --lightred: hsl(0, 100%, 63%);
+    --verydarkcyan: hsl(192, 100%, 9%);
+    --verypaleblue: hsl(207, 100%, 98%);
+
+    --headingtextfont: 'Poppins', sans-serif;
+    --bodytextfont: 'Open Sans', sans-serif;
+
+}
+
+/** General Settings**/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--headingtextfont);
+}
+
+p,
+a {
+    font-family: var(--bodytextfont);
+}
+
+.bg-lightblue {
+    width: 100%;
+    background-color: var(--verypaleblue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/** Header Settings**/
+header {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+}
+
+header img {
+    width: 150px;
+}
+
+input:invalid {
+    background: white;
+}
+
+input:valid {
+    background: hsla(100, 90%, 70%, 1);
+}
+
+header a {
+    color: var(--lightpink);
+    text-decoration: none;
+    border: solid 1px var(--lightpink);
+    padding: 5px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a:hover {
+    color: var(--pink);
+    border: solid 1.5px var(--pink);
+}
+
+/** Main Settings **/
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+main p {
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+main a {
+    color: white;
+    background-color: var(--pink);
+    border-radius: 50px;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+main a:hover {
+    background-color: var(--lightpink);
+}
+
+main img {
+    margin-top: 50px;
+    width: 70%;
+}
+
+/**Advertisment Settings**/
+.advertisment {
+    display: flex;
+    padding: 100px 0;
+}
+
+.advertisment .advertisment-left,
+.advertisment .advertisment-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.advertisment h1 {
+    font-size: 5rem;
+
+}
+
+.advertisment img {
+    width: 40px;
+}
+
+/** Illustration Settings **/
+.illustration {
+    display: flex;
+    align-items: center;
+}
+
+.illustration article h2 {
+    font-weight: 700;
+
+}
+
+.illustration article p {
+    padding-top: 20px;
+    max-width: 70%;
+
+
+}
+
+.illustration img {
+    width: 70%;
+}
+
+.top-togheter {
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-users {
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-togheter {
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-users {
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.illustration-p {
+    padding: 40px 0px;
+}
+
+.illustration-p article {
+    padding-left: 80px;
+}
+
+.illustration-reverse {
+    flex-direction: row-reverse;
+}
+
+/** Callto Action Settings **/
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+}
+
+.call-to-action h2 {
+    font-size: 1.9rem;
+}
+
+.call-to-action a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--pink);
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.call-to-action a:hover {
+    background-color: var(--lightpink);
+}
+
+
+.call-to-action article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** Footer Settings **/
+footer .top {
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer .footer-content {
+    display: flex;
+    color: white;
+}
+
+footer .footer-content img {
+    width: 150px;
+}
+
+footer .footer-content p {
+    padding: 20px 0px;
+    width: 60%;
+}
+
+footer .footer-content .footer-content-right a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--pink);
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-left: 20px;
+}
+
+footer .footer-content .footer-content-right a:hover {
+
+    background-color: var(--lightpink);
+
+}
+
+footer .footer-content .footer-content-right input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+
+footer .footer-bg {
+    background-color: var(--verydarkcyan);
+    padding-top: 40px;
+}
+
+footer .socials {
+    padding: 60px 0;
+
+
+}
+
+footer .socials ion-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+footer .footer-content .phone,
+footer .footer-content .email {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-content .phone img,
+footer .footer-content .email img {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+/** Attribution Settings **/
+.attribution p {
+    text-align: center;
+}
+
+/** Media Queries Settings **/
+@media (max-width: 375px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main p {
+        width: 100%;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .advertisment {
+        flex-direction: column;
+    }
+
+    .advertisment h1 {
+
+        font-size: 4rem;
+    }
+
+    .advertisment-left {
+        margin-bottom: 50px;
+    }
+
+    .top-togheter {
+        background-image: url(./images/bg-section-top-mobile-1.svg);
+        height: 100px;
+    }
+
+    .top-users {
+        background-image: url(./images/bg-section-top-mobile-2.svg);
+    }
+
+    .bottom-togheter {
+
+        background-image: url(./images/bg-section-bottom-mobile-1.svg);
+
+    }
+
+    .bottom-users {
+
+        background-image: url(./images/bg-section-bottom-mobile-2.svg);
+
+    }
+
+    .illustration-p article {
+        padding-left: 0px;
+    }
+
+    .illustration {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .illustration article {
+        padding-left: 0px;
+    }
+
+    .illustration img {
+        width: 100%;
+    }
+
+    .illustration article {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .illustration article h1,
+    .illustration article p {
+        text-align: center;
+
+    }
+
+    .illustration article p {
+        max-width: 100%;
+    }
+
+    .illustration-p {
+        padding: 80px 10px;
+    }
+
+    .bg-lightblue {
+        padding: 40px 0px;
+    }
+
+    .top img,
+    .bottom img {
+        height: 67px;
+    }
+
+    .call-to-action article h2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    footer .top {
+        background-image: url(./images/bg-footer-top-mobile.svg);
+        height: 53px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    footer .footer-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column-reverse;
+    }
+
+    footer .footer-content p {
+        width: 100%;
+    }
+
+    footer .footer-content .footer-content-right input {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    footer .footer-content .footer-content-right a {
+        margin-left: 0px;
+    }
+
+    footer .footer-content-left {
+        margin-top: 50px;
+    }
+
+}
